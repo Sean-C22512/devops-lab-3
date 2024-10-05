@@ -1,0 +1,8 @@
+__pycache__/
+flask_venv/
+.cache/
+.bash_logout
+.bash_profile
+.bashrc 
+.lesshst
+.gitconfig
