@@ -1,0 +1,12 @@
+[Unit]
+Description=Flask Application
+Service After=network.target
+ 
+[Service]
+User=alarm
+WorkingDirectory=/home/alarm 
+Environment="PATH=/home/alarm/flask_venv/bin" 
+ExecStart=/home/alarm/flask_venv/bin/flask --app /home/alarm/hello run --host=0.0.0.0
+
+[Install]
+WantedBy=multi-user.target
